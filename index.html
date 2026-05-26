@@ -91,11 +91,6 @@
           <div class="column has-text-centered">
             <h1 class="title is-1 publication-title">Avatar Concept Slider: Controllable Editing of Concepts in 3D Human
               Avatars</h1>
-            <div class="is-size-5 publication-authors">
-              <span class="author-block">
-                Anonymous Submission
-              </span>
-            </div>
 
             </div>
           </div>
@@ -224,6 +219,67 @@
     </div>
   </section>
 
+  <section class="section">
+    <div class="container">
+      <div class="section">
+        <div class="content has-text-centered">
+          <h2 class="title is-3">Baseline Comparisons</h2>
+          <p>
+            Quantitative evaluation on a standardized set of 20 source avatar+concept pairs. For image-based metrics,
+            edited avatars are rendered from four viewpoints. Higher is better for all metrics.
+          </p>
+          <div class="table-container">
+            <table class="table is-bordered is-striped is-hoverable is-fullwidth">
+              <thead>
+                <tr>
+                  <th rowspan="2">Method</th>
+                  <th colspan="2">Controllability</th>
+                  <th colspan="2">Attribute Preservation</th>
+                </tr>
+                <tr>
+                  <th>CLIP<sub>align</sub> &uarr;</th>
+                  <th>VLM<sub>rank</sub> &uarr;</th>
+                  <th>ArcFace<sub>sim</sub> &uarr;</th>
+                  <th>VLM<sub>preservation</sub> &uarr;</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>HumanGaussian</td>
+                  <td>0.24</td>
+                  <td>0.20</td>
+                  <td>0.85</td>
+                  <td>0.74</td>
+                </tr>
+                <tr>
+                  <td>DreamAvatar</td>
+                  <td>0.23</td>
+                  <td>0.10</td>
+                  <td>0.77</td>
+                  <td>0.49</td>
+                </tr>
+                <tr>
+                  <td>TADA</td>
+                  <td>0.23</td>
+                  <td>0.05</td>
+                  <td>0.84</td>
+                  <td>0.85</td>
+                </tr>
+                <tr>
+                  <td><strong>Ours</strong></td>
+                  <td><strong>0.25</strong></td>
+                  <td><strong>0.90</strong></td>
+                  <td><strong>0.87</strong></td>
+                  <td><strong>0.90</strong></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <img src="./static/images/baseline_comparisons_fig4.png" alt="Comparison of Avatar Concept Slider against text-based baseline methods" style="width: 100%;">
+        </div>
+      </div>
+    </div>
+  </section>
 
 
 
